@@ -120,12 +120,17 @@
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  text-align: center;
 }
 
-.left-container {
+.about .left-container {
   flex: 1;
   padding: 10px;
   font-size: 20px;
+}
+
+.about .left-container h1 {
+  letter-spacing: 10px;
 }
 
 .about-button-section {
@@ -148,13 +153,13 @@
   transition: 1s;
 }
 
-.right-container {
+.about .right-container {
   flex: 1;
   padding: 10px;
 }
 
-.right-container img {
-  max-width: 75%;
+.about .right-container img {
+  max-width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -171,4 +176,59 @@
 
 .fa-whatsapp {
   color: #128c7e;
+}
+
+/* Event Section */
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.events-container .left-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.events-container .left-container img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.events-container .right-container {
+  flex: 1;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.events-button-section {
+  padding: 20px 0;
+}
+
+.events-button-section .event-button {
+  background-color: #ef9273;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.events-button-section .event-button:hover {
+  background-color: wheat;
+  color: black;
+  transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+  }
 }
