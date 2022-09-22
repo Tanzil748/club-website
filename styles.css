@@ -7,15 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background: linear-gradient(#f2ebef, white, #f2ebe9);
-}
-
 /* Navbar */
 .navbar {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: sticky;
@@ -47,13 +44,16 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  list-style: none;
-  gap: 10px;
 }
 
-.navMenu a {
+.navMenu li {
+  list-style: none;
+}
+
+.navMenu li a {
   text-decoration: none;
   color: black;
+  padding: 10px;
 }
 
 .navMenu li a:hover {
@@ -77,7 +77,7 @@ body {
   background-color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hamburger {
     display: block;
   }
@@ -111,18 +111,64 @@ body {
   }
 }
 
-/* About Page */
+/* About Section */
 .about {
-  border: 2px solid black;
-  height: 50vh;
+  width: 100%;
+  background-color: #ef9273;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
+  padding: 20px 0;
 }
 
-/* Event Page */
-.event {
-  border: 2px solid black;
-  height: 50vh;
+.left-container {
+  flex: 1;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.about-button-section {
+  padding: 20px 0;
+}
+
+.about-button-section .about-button {
+  background-color: wheat;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.about-button-section .about-button:hover {
+  background-color: white;
+  color: #ef9273;
+  transition: 1s;
+}
+
+.right-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.right-container img {
+  max-width: 75%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+}
+
+.fa-instagram {
+  color: #c13584;
+}
+
+.fa-whatsapp {
+  color: #128c7e;
 }
