@@ -120,7 +120,6 @@ body {
 /* Eboard */
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin: 10px;
 }
@@ -137,6 +136,23 @@ body {
 .cardInfo {
   font-size: 0.9em;
   padding: 5px;
+}
+
+@media (min-width: 600px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Footer */
