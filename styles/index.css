@@ -7,34 +7,19 @@
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 /* Navbar */
 .navbar {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   position: sticky;
   z-index: 1;
   top: 0;
-  border-bottom: 4px solid #ef9273;
+  border-bottom: 4px solid wheat;
 }
 
 .logo {
   height: 75px;
   width: 75px;
-  z-index: 1;
 }
 
 .logoContainer {
@@ -44,16 +29,13 @@ body {
   text-decoration: none;
 }
 
-.logoContainer p {
+.logoContainer span {
   color: black;
-  text-decoration: none;
-  text-align: center;
 }
 
 .navMenu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding-top: 15px;
 }
 
 .navMenu li {
@@ -63,7 +45,6 @@ body {
 .navMenu li a {
   text-decoration: none;
   color: black;
-  padding: 10px;
 }
 
 .navMenu li a:hover {
@@ -120,63 +101,23 @@ body {
   }
 }
 
-/* About Section */
-.about {
-  width: 100%;
-  background-color: #ef9273;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.about .left-container {
-  flex: 1;
-  padding: 10px;
-  font-size: 20px;
-}
-
-.about .left-container h1 {
-  letter-spacing: 10px;
-}
-
-.about-button-section {
-  padding: 20px 0;
-}
-
-.about-button-section .about-button {
+/* Hero Section */
+.hero {
+  color: #1d6a86;
   background-color: wheat;
-  border: none;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 18px;
+  position: relative;
 }
 
-.about-button-section .about-button:hover {
-  background-color: white;
-  color: #ef9273;
-  transition: 1s;
+.heroHeader {
+  letter-spacing: 5px;
+  color: #fb595e;
+}
+.carousel-item {
+  height: 400px;
 }
 
-.about .right-container {
-  flex: 1;
-  padding: 10px;
-}
-
-.about .right-container img {
-  max-width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 768px) {
-  .about {
-    flex-direction: column;
-  }
+.carousel-item img {
+  max-height: 400px;
 }
 
 .fa-instagram {
@@ -185,6 +126,27 @@ body {
 
 .fa-whatsapp {
   color: #128c7e;
+}
+
+.heroWave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.heroWave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 52px;
+}
+
+.heroWave .shape-fill {
+  fill: #fff;
 }
 
 /* Event Section */
