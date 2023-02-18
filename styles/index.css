@@ -160,14 +160,14 @@
   z-index: 1;
 }
 
-.smallBox img {
+.smallBox img,
+.bigBox img {
   width: 100%;
   object-fit: contain;
 }
 
 .eventBlurb {
   text-align: center;
-  z-index: 1;
 }
 
 .eventWave {
