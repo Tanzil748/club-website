@@ -196,6 +196,21 @@
   background-color: #dea5a4;
 }
 
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.eboardImg {
+  /* position: relative; */
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+  border-radius: 10%;
+  border: 3px solid wheat;
+  margin-top: -80px;
+}
+
 /* Footer */
 .footer {
   background-color: #ef9273;
