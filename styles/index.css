@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* adjust the scroll height */
+html {
+  scroll-padding: 8rem;
+}
+
 /* Navbar */
 .navbar {
   background-color: white;
