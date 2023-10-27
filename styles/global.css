@@ -80,16 +80,18 @@ li a {
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -300px;
   height: 100vh;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.906);
   backdrop-filter: blur(10px);
   z-index: 10;
   box-shadow: -3px 0px 19px -1px rgba(0, 0, 0, 0.75);
-  display: none;
+  opacity: 0;
+  display: flex;
   flex-direction: column;
   gap: 10px;
+  transition: 500ms ease;
 }
 
 .sidebar li {

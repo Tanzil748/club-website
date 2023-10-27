@@ -2,11 +2,13 @@
 const sidebar = document.querySelector(".sidebar");
 
 const sideOpen = () => {
-  sidebar.style.display = 'flex'
+  sidebar.style.opacity = '1'
+  sidebar.style.transform = 'translateX(-300px)';
 }
 
 const sideClose = () => {
-  sidebar.style.display = 'none'
+  sidebar.style.opacity = '0'
+  sidebar.style.transform = 'translateX(300px)'
 }
 
 // eboard-carousel card functionality
