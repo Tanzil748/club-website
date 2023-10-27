@@ -106,6 +106,7 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .eboard-carousel::-webkit-scrollbar {
@@ -115,9 +116,10 @@
 .card {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border: none;
-  width: 18rem;
+  width: 280px;
   flex: 0 0 auto; /*prevent card from growing or shrinking, always maintain original size*/
-  margin-right: 40px;
+  margin-right: 40px; /* gap in between cards*/
+  scroll-snap-align: start;
 }
 
 .eboardImg {
