@@ -27,6 +27,7 @@
     ></script>
 
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/global.css" />
     <script src="./script.js" defer></script>
     <title>QC TROPA | Home</title>
   </head>
@@ -34,29 +35,49 @@
     <!-- Navbar -->
     <nav class="navbar py-1 my-0">
       <div class="container-xxl">
-        <a href="#" class="logoContainer"
-          ><img src="images/tropaLogo.png" alt="Club Logo" class="logo" />
-          <span>Queens College <br />TROPA Club 🇵🇭</span>
+        <a href="#" class="logoContainer">
+          <img src="images/tropaLogo.png" alt="Club Logo" class="logo" />
+          <span>
+            Queens College
+            <br />
+            TROPA Club 🇵🇭
+          </span>
         </a>
 
-        <ul class="navMenu gap-4">
-          <li><a href="events.html" class="navLink">Events</a></li>
-          <li><a href="pictures.html" class="navLink">Photos</a></li>
+        <ul class="navMenu">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="pictures.html">Photos</a></li>
           <li>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeLK1D017oV9Wfjk5G8CGAnTNgEfN728Yd00oITMmsgQ80AyA/viewform"
-              class="navLink"
+              class="join-btn"
               target="_blank"
-              >Join TROPA</a
             >
+              Join TROPA
+            </a>
           </li>
         </ul>
 
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+        <ul class="sidebar">
+          <li><i class="fa-solid fa-xmark fa-lg close" onclick=sideClose()></i></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="pictures.html">Photos</a></li>
+          <li>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeLK1D017oV9Wfjk5G8CGAnTNgEfN728Yd00oITMmsgQ80AyA/viewform"
+              target="_blank"
+            >
+              Join TROPA Form
+            </a>
+          </li>
+          <li>© All rights reserved by QC TROPA</li>
+        </ul>
+
+        <!-- hamburger icon -->
+        <i
+            class="fa-solid fa-bars fa-lg hamburger"
+            onclick=sideOpen()
+        ></i>
       </div>
     </nav>
 
@@ -67,7 +88,10 @@
           <div
             class="col-12 col-md-6 d-flex flex-column justify-content-center"
           >
-            <h1>QC <span class="heroHeader">TROPA</span></h1>
+            <h1>
+              QC
+              <span class="heroHeader">TROPA</span>
+            </h1>
             <p class="lead">
               We are a community-oriented club dedicated to celebrating Filipino
               culture. We aim to create a community where people can share,
@@ -77,9 +101,9 @@
               perferendis excepturi modi facilis.
             </p>
             <div class="pt-3">
-              <a href="#eventSection"
-                ><button class="btn btn-danger">Learn More</button></a
-              >
+              <a href="#eventSection">
+                <button class="btn btn-danger">Learn More</button>
+              </a>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeLK1D017oV9Wfjk5G8CGAnTNgEfN728Yd00oITMmsgQ80AyA/viewform"
                 target="_blank"
@@ -89,20 +113,21 @@
             </div>
             <div class="mt-5 mb-2">
               <a href="#"><i class="fa-brands fa-discord fa-2xl"></i></a>
-              <a href="https://www.instagram.com/qctropa/" target="_blank"
-                ><i class="fa-brands fa-instagram fa-2xl"></i
-              ></a>
+              <a href="https://www.instagram.com/qctropa/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
               <a
                 href="https://chat.whatsapp.com/GpMkY4mJPH8JcecPWkrEky"
                 target="_blank"
-                ><i class="fa-brands fa-whatsapp fa-2xl"></i
-              ></a>
-              <a href="mailto:qctropa@gmail.com"
-                ><i
+              >
+                <i class="fa-brands fa-whatsapp fa-2xl"></i>
+              </a>
+              <a href="mailto:qctropa@gmail.com">
+                <i
                   class="fa-solid fa-envelope fa-2xl"
                   style="color: orangered"
-                ></i
-              ></a>
+                ></i>
+              </a>
             </div>
           </div>
           <div class="col-12 col-md-6">
@@ -250,9 +275,9 @@
                 eveniet laboriosam recusandae commodi. Doloribus, ratione
                 tenetur.
               </p>
-              <a href="events.html"
-                ><button class="btn btn-lg btn-danger">Event Dates</button></a
-              >
+              <a href="events.html">
+                <button class="btn btn-lg btn-danger">Event Dates</button>
+              </a>
             </div>
           </div>
         </div>
@@ -330,195 +355,197 @@
       <h2 class="mb-3 d-flex justify-content-center" style="color: white">
         Meet Our Team
       </h2>
-      <i class="fa-solid fa-caret-left pre-btn"></i>
-      <i class="fa-solid fa-caret-right nxt-btn"></i>
-      <div class="eboard-carousel container-xxl">
-        <!-- president -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcPres.jpeg"
-            alt="Tropa President"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Hans Vidaure</h4>
-            <h5>President</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="eCar-wrapper container-xxl">
+        <i class="fa-solid fa-caret-left pre-btn"></i>
+        <i class="fa-solid fa-caret-right nxt-btn"></i>
+        <div class="eboard-carousel">
+          <!-- president -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcPres.jpeg"
+              alt="Tropa President"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Hans Vidaure</h4>
+              <h5>President</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+  
+          <!-- vp -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcVice.jpeg"
+              alt="Tropa Vice-President"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Ann Jenica Jose</h4>
+              <h5>Vice President</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-        </div>
-
-        <!-- vp -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcVice.jpeg"
-            alt="Tropa Vice-President"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Ann Jenica Jose</h4>
-            <h5>Vice President</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  
+          <!-- secretary -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcSec.jpeg"
+              alt="Tropa Secretary"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Rosario Diaz</h4>
+              <h5>Secretary</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+  
+          <!-- treasurer -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcTreasurer.jpeg"
+              alt="Tropa Treasurer"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Ninabeth Palces</h4>
+              <h5>Treasurer</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-        </div>
-
-        <!-- secretary -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcSec.jpeg"
-            alt="Tropa Secretary"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Rosario Diaz</h4>
-            <h5>Secretary</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+  
+          <!-- PR -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcPR.jpeg"
+              alt="Tropa Internal Public Relations Officer"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Mohammed Hossain</h4>
+              <h5>Internal Public Relations</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+  
+          <!-- historian -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcHist.jpeg"
+              alt="Tropa Historian"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Karl Gregana</h4>
+              <h5>Historian</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
-        </div>
-
-        <!-- treasurer -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcTreasurer.jpeg"
-            alt="Tropa Treasurer"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Ninabeth Palces</h4>
-            <h5>Treasurer</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
-          </div>
-        </div>
-
-        <!-- PR -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcPR.jpeg"
-            alt="Tropa Internal Public Relations Officer"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Mohammed Hossain</h4>
-            <h5>Internal Public Relations</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
-          </div>
-        </div>
-
-        <!-- historian -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcHist.jpeg"
-            alt="Tropa Historian"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Karl Gregana</h4>
-            <h5>Historian</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
-          </div>
-        </div>
-
-        <!-- graphic head -->
-        <div class="card rounded-2">
-          <img
-            src="images/eboard/eboardCardBackground.png"
-            alt="eboard card background"
-            class="card-img-top"
-            draggable="false"
-          />
-          <img
-            src="images/eboard/qcGraphics.jpeg"
-            alt="Tropa Graphics Head"
-            class="eboardImg mx-auto"
-            draggable="false"
-          />
-          <div class="text-center">
-            <h4>Divine Rose Pamolarco</h4>
-            <h5>Graphics Head</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-          <hr />
-          <div class="d-flex justify-content-center gap-4 pb-2">
-            <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
-            <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+  
+          <!-- graphic head -->
+          <div class="card rounded-2">
+            <img
+              src="images/eboard/eboardCardBackground.png"
+              alt="eboard card background"
+              class="card-img-top"
+              draggable="false"
+            />
+            <img
+              src="images/eboard/qcGraphics.jpeg"
+              alt="Tropa Graphics Head"
+              class="eboardImg mx-auto"
+              draggable="false"
+            />
+            <div class="text-center">
+              <h4>Divine Rose Pamolarco</h4>
+              <h5>Graphics Head</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-center gap-4 pb-2">
+              <a href="#"><i class="fa-brands fa-discord fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href="#"><i class="fa-brands fa-meta fa-lg"></i></a>
+            </div>
           </div>
         </div>
       </div>

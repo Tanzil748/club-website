@@ -1,18 +1,13 @@
-// hamburger menu
-const hamEl = document.querySelector(".hamburger");
-const navMenuEl = document.querySelector(".navMenu");
+// sidebar functionality
+const sidebar = document.querySelector(".sidebar");
 
-hamEl.addEventListener("click", function () {
-  hamEl.classList.toggle("active");
-  navMenuEl.classList.toggle("active");
-});
+const sideOpen = () => {
+  sidebar.style.display = 'flex'
+}
 
-document.querySelectorAll(".navLink").forEach(function (n) {
-  n.addEventListener("click", () => {
-    hamEl.classList.remove("active");
-    navMenuEl.classList.remove("active");
-  });
-});
+const sideClose = () => {
+  sidebar.style.display = 'none'
+}
 
 // eboard-carousel card functionality
 const carousel = document.querySelectorAll(".eboard-carousel");
