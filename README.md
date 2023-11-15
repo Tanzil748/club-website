@@ -1,16 +1,17 @@
-
 # QC TROPA Club
 
 I built this website for the Queens College TROPA Club to help boost their online presence.
 
 ## Tech Stack
+
 - Built using `HTML` , `CSS`, `Bootstrap v5.2`
 - Hamburger menu built with `Javascript`
+
 ## Demo
 
 Here's a walkthrough of how the app functions:
 
-![](https://github.com/Tanzil748/club-website/blob/main/Rwt1i7ISGE.gif)
+![](https://github.com/Tanzil748/club-website/blob/main/club_gif.gif)
 
 ## Deployment
 
@@ -20,8 +21,8 @@ To deploy this project, install `live server` as a Visual Studio Code extension.
   http://127.0.0.1:5500/
 ```
 
-
 ## Project Structure
+
 <pre>
 .
 ├── README.md
@@ -41,5 +42,3 @@ To deploy this project, install `live server` as a Visual Studio Code extension.
 │   └── pictures.css
 └── GIF
 </pre>
-
-
