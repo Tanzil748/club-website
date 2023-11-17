@@ -10,8 +10,7 @@ I built this website for the Queens College TROPA Club to help boost their onlin
 ## Demo
 
 Here's a walkthrough of how the app functions:
-
-![](https://github.com/Tanzil748/club-website/blob/main/club_gif.gif)
+![](https://github.com/Tanzil748/club-website/blob/main/gif/club_gif.gif)
 
 ## Deployment
 
@@ -40,5 +39,5 @@ To deploy this project, install `live server` as a Visual Studio Code extension.
 │   ├── events.css
 │   ├── index.css
 │   └── pictures.css
-└── GIF
+└── <strong>GIF</strong>
 </pre>

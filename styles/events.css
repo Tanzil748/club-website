@@ -1,8 +1,131 @@
 /* Events */
+.left-cont {
+  left: 0;
+}
+
+.right-cont {
+  left: 50%;
+}
+
 .eventCard {
-  margin: 1em 0;
-  background-color: wheat;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+}
+
+.inner-cont {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: wheat;
+}
+
+.time-box {
+  position: absolute;
+  right: -20px;
+  top: 32px;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #dc3545;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  width: 50px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-cont .time-box {
+  left: -30px;
+}
+
+/* this is for blue line */
+.left-cont::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #2f88a8;
+  z-index: -1;
+}
+
+.right-cont::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background-color: #2f88a8;
+  z-index: -1;
+}
+
+/* now arrows */
+.left-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 38px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid wheat;
+  right: 30px;
+}
+
+.right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 38px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid wheat;
+  left: 30px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.card-content {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 0.5rem !important;
+}
+
+.card-subHeader {
+  font-weight: bolder;
+}
+
+.date-visible {
+  display: none;
+}
+
+@media screen and (max-width: 742px) {
+  .right-cont {
+    left: 0;
+  }
+  .eventCard {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .date-visible {
+    display: block;
+  }
+
+  .left-cont::after,
+  .right-cont::after,
+  .time-box,
+  .left-arrow,
+  .right-arrow {
+    display: none;
+  }
 }
